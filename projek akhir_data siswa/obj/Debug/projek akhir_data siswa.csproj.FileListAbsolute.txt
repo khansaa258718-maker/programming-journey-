@@ -1,0 +1,8 @@
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\obj\Debug\projek akhir_data siswa.csproj.AssemblyReference.cache
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\obj\Debug\projek akhir_data siswa.csproj.CoreCompileInputs.cache
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\bin\Debug\projek akhir_data siswa.exe.config
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\bin\Debug\projek akhir_data siswa.exe
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\bin\Debug\projek akhir_data siswa.pdb
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\obj\Debug\projek akhir_data siswa.exe
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\obj\Debug\projek akhir_data siswa.pdb
+D:\khansaayualkaila\projek akhir_data siswa\projek akhir_data siswa\obj\Debug\projek akhir_data siswa.exe.config
