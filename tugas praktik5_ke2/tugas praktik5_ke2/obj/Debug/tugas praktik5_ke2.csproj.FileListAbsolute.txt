@@ -1,0 +1,7 @@
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\bin\Debug\tugas praktik5_ke2.exe.config
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\bin\Debug\tugas praktik5_ke2.exe
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\bin\Debug\tugas praktik5_ke2.pdb
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\obj\Debug\tugas praktik5_ke2.csproj.AssemblyReference.cache
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\obj\Debug\tugas praktik5_ke2.csproj.CoreCompileInputs.cache
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\obj\Debug\tugas praktik5_ke2.exe
+D:\khansaayualkaila\tugas praktik5_ke2\tugas praktik5_ke2\obj\Debug\tugas praktik5_ke2.pdb
