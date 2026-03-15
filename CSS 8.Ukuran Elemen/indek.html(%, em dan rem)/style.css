@@ -1,0 +1,12 @@
+.judul{
+    font-size: 2rem;
+}
+
+.container{
+    width: 50%;
+    background-color: lavender;
+}
+
+.container p{
+    font-size: 1.5em;
+}
