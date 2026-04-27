@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas CSS z-index</title>
+    <style>
+        .container {
+            position: relative;
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            position: absolute; 
+            border: 5px solid rgb(209, 197, 161);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .gambar1 {
+            z-index: 3;
+            top: 0;
+            left: 0;
+        }
+        .gambar2 {
+            z-index: 2;
+            top: 50px;
+            left: 50px;
+        }
+        .gambar3 {
+            z-index: 1;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>PEMANDANGAN</h2>
+    <p>Cinematik vieww</p>
+
+    <div class="container">
+        <img src="images.jpg" alt="GUNUNG" class="gambar1">
+        <img src="gambar 2.jpg" alt="SAWAH" class="gambar2">
+        <img src="gambar 3.webp" alt="PULAU" class="gambar3">
+    </div>
+
+</body>
+</html>
