@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik 03.2 - Text Decoration</title>
+
+    <style>
+        :root {
+            --primary-color: #48d3ec;
+            --bg-color: #fff0f6;
+            --card-bg: #ffffff;
+            --text-main: #4b164c;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e4fcff, #cff1fb);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.3rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(236,72,153,0.15);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        .underline {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .normal {
+            text-decoration: none;
+        }
+
+        .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Praktik 03.2 - Text Decoration</h1>
+    <p>by Khansaa Ayu Alkaila</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <span class="label">Awal Cerita (Underline)</span>
+        <p class="underline">
+            Di sebuah kamar kecil yang tenang, Putri merangkai jutaan impian melalui tulisan di layar monitornya.
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Pesan Kehidupan (Overline)</span>
+        <p class="overline">
+        </p> Jangan takut untuk memberikan spasi dalam hidupmu,karena di dalam jeda itulah, inspirasi seringkali menemukan jalannya untuk masuk."
+    </div>
+
+    <div class="card">
+        <span class="label">Keraguan (Line Through)</span>
+        <p class="line-through">
+            "Aku tidak akan pernah berhasil."
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Keyakinan Baru (Normal)</span>
+        <p class="normal">
+            Namun ia menghapus pikiran negatif itu dan menggantinya dengan semangat baru.
+            Ia berjanji untuk terus belajar dan tidak mudah menyerah.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktik 03.4 - Text Spacing</title>
+
+    <style>
+        :root {
+            --primary-color: #48e4ec;
+            --bg-color: #f0fcff;
+            --card-bg: #ffffff;
+            --text-main: #4b164c;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e4fbff, #cff0fb);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            letter-spacing: 4px; /* letter-spacing */
+            word-spacing: 8px;   /* word-spacing */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(236,72,153,0.15);
+            margin-bottom: 25px;
+            border-left: 6px solid var(--primary-color);
+        }
+
+        .indent {
+            text-indent: 40px; /* text-indent */
+            line-height: 2;    /* line-height */
+        }
+
+        .spacing {
+            letter-spacing: 2px;
+            word-spacing: 6px;
+        }
+
+        .white-space {
+            white-space: break-spaces; /* white-space */
+            background: #e4fbff;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+        }
+
+        .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Praktik 03.4 Text Spacing</h1>
+    <p>by Khansaa ayu alkaila</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <span class="label">Text Indent & Line Height</span>
+        <p class="indent">
+            Arka adalah seorang pemuda yang gigih menuntut ilmu di tengah keterbatasan. 
+            Baginya, setiap huruf yang ia baca dari buku bekas adalah benih harapan dan jembatan untuk memahami dunia,
+             yang lebih luas. Meski badai sempat memadamkan lilin penerangnya, 
+             ia tidak menyerah dan justru memandang rintangan tersebut sebagai ruang untuk bernapas sejenak sebelum membangun mimpi yang lebih kuat demi masa depan keluarganya.
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">Letter & Word Spacing</span>
+        <p class="spacing">
+            Literasi & Harapan: Setiap kata adalah fondasi untuk membangun mimpi.
+            Ilmu & Masa Depan: Pengetahuan adalah jembatan menuju kehidupan yang lebih baik.
+            Resiliensi: Rintangan dan kegagalan hadir untuk membentuk pribadi yang lebih kuat.
+        </p>
+    </div>
+
+    <div class="card">
+        <span class="label">White Space</span>
+        <p class="white-space">
+            Perjalanan tidak selalu mudah.  
+
+            Kadang ada rintangan.  
+
+            Kadang ada kegagalan.  
+
+            Namun semua itu membuatnya semakin kuat.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
