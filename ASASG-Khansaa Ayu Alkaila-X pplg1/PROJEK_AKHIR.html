@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>The Golden Place Italian Restaurant</title>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: black;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  border-bottom: 2px solid gold;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+
+#home {
+  background: url("Emilia-Romagna\ Travel\ Guide_\ Why\ This\ Region\ \(and\ Umbria\)\ Is\ Italy’s\ Best\ Alternative\ to\ Tuscany\ in\ 2026\ _\ ASAPtickets®\ travel\ blog.jpg") no-repeat center/cover;
+}
+
+
+#about {
+  background: #2E8B57;
+}
+
+
+#menu {
+  background: #f0de9e;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  background: #e5dfb8;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translatey(50px);
+  box-shadow: 0 10px 25px rgba(255,215,0,0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: gold;
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.price {
+  margin: 10px 0;
+  font-weight: bold;
+}
+#contact {
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  color: white;
+}
+
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.contact-info {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 200px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  gap: 10px;
+}
+
+
+.contact-info a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: white;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+  color: black;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+
+.btn {
+  background: linear-gradient(135deg, gold, orange);
+  border: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: white;
+}
+#about {
+  background: linear-gradient(135deg, #1a2a1a, #2e8b57);
+  position: relative;
+  
+}
+.gambar1{
+  position:fixed;
+  right:-150px;
+  bottom:20px;
+  width:150px;
+}
+
+.gambar2{
+  position:fixed;
+  left:-150px;
+  bottom:20px;
+  width:150px;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(155, 214, 123, 0.4);
+  top: 0;
+  left: 0;
+}
+
+
+.about-content {
+  position: relative;
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-content h1 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: #eee;
+  line-height: 1.6;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">Tentang</a>
+  <a href="#menu">Menu</a>
+  <a href="#contact">Kontak</a>
+</nav>
+
+
+<section id="home">
+  <h1>The Golden Place</h1>
+  <p>Rasakan cita rasa autentik Italian Food langsung di meja Anda</p>
+  <a href="#menu"><button class="btn">Lihat Menu</button></a>
+</section>
+
+
+<section id="about">
+
+  <div class="about-content">
+    <h1>Tentang Kami</h1>
+    <p>
+      Kami menghadirkan pengalaman kuliner Italia yang autentik dengan sentuhan elegan.
+      Setiap hidangan dibuat dari bahan terbaik dan resep tradisional.
+      <br><br>
+      Bagi kami, makanan bukan sekadar rasa, tetapi juga pengalaman yang tak terlupakan.
+    </p>
+    <img src="download__40_-removebg-preview.png" class="gambar1">
+    <img src="Carmel_Frappuccino_Clipart-removebg-preview.png" class="gambar2">
+  
+  </div>
+</section>
+
+
+ <section id="menu">
+  <h1>Our Menu</h1>
+
+  <div class="menu-container">
+
+    <!-- PASTA -->
+    <div class="card">
+      <img src="An exquisite plate of gourmet spaghetti carbonara.jpg">
+      <h3>Spaghetti Carbonara</h3>
+      <p>Pasta creamy dengan keju parmesan.</p>
+      <div class="price">Rp 55.000</div>
+    </div>
+
+    <div class="card">
+      <img src="A delicious and EASY homemade Shrimp Alfredo Fettuccine Pasta recipe that is made with a homemade Alfredo sauce_.jpg">
+      <h3>Fettuccine Alfredo</h3>
+      <p>Pasta saus krim lembut khas Italia.</p>
+      <div class="price">Rp 60.000</div>
+    </div>
+
+    <div class="card">
+      <img src="If you love spicy Italian food, you have to try Penne Arrabbiata! It's spicy, saucy, and so easy! Ready in just 20 minutes!.jpg">
+      <h3>Penne Arrabbiata</h3>
+      <p>Pasta saus tomat pedas.</p>
+      <div class="price">Rp 50.000</div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="card">
+      <img src="A Buffalo Pizza on wooden plate isolated on a transparent background.jpg">
+      <h3>Margherita Pizza</h3>
+      <p>Pizza klasik dengan mozzarella.</p>
+      <div class="price">Rp 75.000</div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65">
+      <h3>Pepperoni Pizza</h3>
+      <p>Pizza dengan topping pepperoni.</p>
+      <div class="price">Rp 85.000</div>
+    </div>
+
+    <div class="card">
+      <img src="Yumm Yumm Pizza.jpg">
+      <h3>Cheese Lovers Pizza</h3>
+      <p>Pizza dengan berbagai jenis keju.</p>
+      <div class="price">Rp 90.000</div>
+    </div>
+
+    <!-- MAIN DISH -->
+    <div class="card">
+      <img src="Lasagne selber machen_ Das ultimative Rezept für Anfänger & Profis - Tastelle.jpg">
+      <h3>Lasagna</h3>
+      <p>Lapisan pasta dengan saus daging.</p>
+      <div class="price">Rp 65.000</div>
+    </div>
+
+    <div class="card">
+      <img src="The Ultimate Comfort Food_ How to Make Restaurant-Quality Parmesan Chicken Alfredo Risotto at Home.jpg">
+      <h3>Risotto</h3>
+      <p>Nasi khas Italia dengan tekstur creamy.</p>
+      <div class="price">Rp 70.000</div>
+    </div>
+
+    <!-- DESSERT -->
+    <div class="card">
+      <img src="Nutella Tiramisu.jpg">
+      <h3>Tiramisu</h3>
+      <p>Dessert kopi khas Italia.</p>
+      <div class="price">Rp 45.000</div>
+    </div>
+
+    <div class="card">
+      <img src="🔥 Panna Cotta Paradise – A silky, creamy Italian dessert that melts in your mouth! 🍮✨ Lightly sweetened with a hint of vanilla, this elegant treat is perfect for any occasion! 😍🌿__🍮✨ Panna Cotta Paradise 🍓🥥__.jpg">
+      <h3>Panna Cotta</h3>
+      <p>Krim lembut dengan saus buah.</p>
+      <div class="price">Rp 40.000</div>
+    </div>
+
+    
+    <div class="card">
+      <img src="Cappuccino.jpg">
+      <h3>Espresso</h3>
+      <p>Kopi khas Italia yang kuat.</p>
+      <div class="price">Rp 25.000</div>
+    </div>
+
+    <div class="card">
+      <img src="download.jpg">
+      <h3>Cappuccino</h3>
+      <p>Kopi dengan susu creamy.</p>
+      <div class="price">Rp 30.000</div>
+    </div>
+
+  </div>
+</section>
+       
+<section id="contact">
+  
+
+    <section id="contact">
+  <h1>Kontak Kami</h1>
+
+  <div class="contact-box">
+
+    <div class="contact-info">
+      <div class="info-item">
+        <p>Jl. Kuliner No. 123, Bogor</p>
+      </div>
+
+      <div class="info-item">
+        <a href="tel:081234567890">0812-3456-7890</a>
+      </div>
+
+      <div class="info-item">
+        <a href="mailto:italian restoran@email.com">italian restoran@email.com</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda..." required></textarea>
+      <button class="btn" >KIRIM PESAN DAN TUNGGU PESANAN</button>
+    
+
+  </div>
+</section>
+</body>
+</html>
